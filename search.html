@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>home</title>
+        <title>Search - Tale</title>
     </head>
-
+	
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -19,7 +18,7 @@
         <div class="container-fluid" style="background-color:white">
 
             <br>
-			<img src="logo2.png" width="100%" alt="" /><br><br>
+			<a href="./home.html"><img src="logo2.png" width="100%" alt="" /></a><br><br>
 			<div class="banner">
 				<input type="button" value="Login" onClick="location.href='./Login.html'">
 				<input type="button" value="Register" onClick="=location.href='./Register.html'">
@@ -28,6 +27,7 @@
 					<input type="button" onClick="location.href='./search.html?term=tale'" value="Search">
 				</div>				
 			</div>
+			<h2>Search Results:</h2>
 			<div id="storyCollection">
 				<div class="storyCard">
 					<img width="100%" class="cardImage" src="images/cinderella.jpg" alt="This is a storie's image">
@@ -63,6 +63,4 @@
 			
         </div>
     </body>
-
-
-    </html>
+</html>
