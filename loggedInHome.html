@@ -1,11 +1,12 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search - Tale</title>
+        <title>LoggedIn home</title>
     </head>
-	
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -18,15 +19,23 @@
         <div class="container-fluid" style="background-color:white">
 
             <br>
-			<a href="./home.html"><img src="logo2.png" width="100%" alt="" /></a><br><br>
+			<img src="logo2.png" width="100%" alt="" /><br><br>
+            <h3 style="text-align: right;">You are logged in</h3>
+            <br>
 			<div class="banner">
-				<input type="button" value="Back to home" onClick="location.href='./home.html'">
+                <input type="button" value="Profile settings">
+                <input type="button" value="Log out" onClick="location.href='./home.html'">
+                <br><br>
+                <input type="button" value="Add Friends">
+                <input type="button" value="view Friend list">
+                <br><br>
+                <input type="button" value="Write a Block" onClick="location.href='./WriteBlock.html'">
+                <br><br>
 				<div class="searchBox">
 					<input type="text" placeholder="Search For Story">
 					<input type="button" onClick="location.href='./search.html?term=tale'" value="Search">
 				</div>				
 			</div>
-			<h2>Search Results:</h2>
 			<div id="storyCollection">
 				<div class="storyCard">
 					<img width="100%" class="cardImage" src="images/cinderella.jpg" alt="This is a storie's image">
@@ -62,4 +71,6 @@
 			
         </div>
     </body>
-</html>
+
+
+    </html>
